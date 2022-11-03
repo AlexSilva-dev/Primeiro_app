@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#363b96"
+    >
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meu app"
+        android:textColor="#bc1069"
+        android:textAlignment="center"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:background="#0000ff"
+        />
+
+    <ImageView
+        android:id="@+id/imgEmoji"
+        android:layout_below="@id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+
+        android:src="@drawable/emoji"
+        android:layout_margin="32dp"
+        />
+
+    <EditText
+        android:id="@+id/edSobreMim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgEmoji"
+        android:hint="\tO que você acha sobre mim?"
+        android:textColorHint="#00cc9b"
+        />
+
+    <Button
+        android:id="@+id/btnVerTexto"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edSobreMim"
+        android:layout_marginLeft="126dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginBottom="32dp"
+        android:text="Ver Texto"
+        android:textAllCaps="false"
+        android:textSize="16dp" />
+
+
+</RelativeLayout>
